@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-surface-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-ink text-bone font-body antialiased;
+    background-color: #08090c;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  ::selection {
+    @apply bg-bronze/30 text-bone;
+  }
+
+  :focus-visible {
+    outline: 2px solid #4C6FFF;
+    outline-offset: 3px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #08090c;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #242933;
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C08A4E;
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply px-6 md:px-10 lg:px-16;
+  }
+
+  .section {
+    @apply relative py-24 md:py-32;
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs tracking-[0.3em] uppercase text-bronze;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-bronze px-7 py-3.5 font-body font-semibold text-ink transition-all duration-300 hover:bg-bronze-light hover:shadow-[0_0_30px_rgba(192,138,78,0.45)] active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 rounded-full border border-bone/25 bg-transparent px-7 py-3.5 font-body font-semibold text-bone transition-all duration-300 hover:border-volt hover:text-volt-light hover:shadow-[0_0_30px_rgba(76,111,255,0.25)] active:scale-95;
+  }
+
+  .card-glass {
+    @apply relative overflow-hidden rounded-2xl border border-surface-border bg-surface/60 backdrop-blur-sm;
+  }
+
+.grid-backdrop {
+    background-image:
+      linear-gradient(to right, rgba(233,230,224,0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(233,230,224,0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-surface-border bg-ink/60 px-4 py-3 font-body text-sm text-bone placeholder:text-bone-faint transition-colors duration-200 focus:border-volt focus:outline-none;
+  }
+
+  .text-gradient-bronze {
+    background: linear-gradient(120deg, #E0B784 0%, #C08A4E 45%, #7C93FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
