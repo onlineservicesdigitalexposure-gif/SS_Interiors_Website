@@ -28,7 +28,7 @@ export default function ServiceCard({ service, onOpen, index = 0 }) {
       <div className="flex items-start justify-between gap-4 p-6">
         <div>
           <h3 className="font-display text-xl font-bold text-bone">{service.title}</h3>
-          <p className="mt-2 font-body text-sm leading-relaxed text-bone-muted">{service.summary}</p>
+          <p className="mt-2 font-body text-base sm:text-lg leading-relaxed text-bone-muted">{service.summary}</p>
         </div>
         <span className="mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full border border-surface-border text-bone-muted transition-all duration-300 group-hover:border-bronze group-hover:bg-bronze/10 group-hover:text-bronze-light">
           <ArrowUpRight size={16} />

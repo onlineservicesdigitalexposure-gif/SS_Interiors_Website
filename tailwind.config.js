@@ -32,8 +32,11 @@ export default {
         },
       },
       fontFamily: {
-        display: ['"Syne"', 'sans-serif'],
-        body: ['"Inter"', 'sans-serif'],
+        script: ['"Great Vibes"', 'cursive'],
+        display: ['"Cinzel"', 'serif'],
+        serif: ['"Cormorant Garamond"', 'serif'],
+        body: ['"Cormorant Garamond"', 'serif'],
+        sans: ['"Montserrat"', 'sans-serif'],
         mono: ['"Space Mono"', 'monospace'],
       },
       backgroundImage: {

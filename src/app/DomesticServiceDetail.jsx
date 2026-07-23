@@ -43,7 +43,7 @@ export default function DomesticServiceDetail() {
             <h1 className="mt-5 font-display text-4xl font-extrabold leading-tight text-bone sm:text-5xl">
               {service.title}
             </h1>
-            <p className="mt-6 font-body text-base leading-relaxed text-bone-muted md:text-lg">
+            <p className="mt-6 font-body text-lg sm:text-xl md:text-2xl leading-relaxed text-bone/90">
               {service.summary}
             </p>
           </Reveal>
@@ -59,7 +59,7 @@ export default function DomesticServiceDetail() {
           <div>
             <SectionTitle eyebrow="Overview" title={`How we approach ${service.title.toLowerCase()}`} />
             <Reveal delay={0.1}>
-              <p className="mt-4 font-body text-sm leading-relaxed text-bone-muted md:text-base">
+              <p className="mt-4 font-body text-lg sm:text-xl leading-relaxed text-bone/90">
                 {service.description}
               </p>
             </Reveal>
@@ -93,7 +93,7 @@ export default function DomesticServiceDetail() {
                 >
                   <Sparkles className="text-bronze" size={20} />
                 </motion.div>
-                <p className="mt-4 text-sm leading-relaxed text-bone">{h}</p>
+                <p className="mt-4 text-base sm:text-lg leading-relaxed text-bone">{h}</p>
               </Reveal>
             ))}
           </div>

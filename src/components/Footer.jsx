@@ -23,7 +23,7 @@ export default function Footer() {
               {organization.name}
             </span>
           </div>
-          <p className="mt-5 max-w-xs font-body text-sm leading-relaxed text-bone-muted">
+          <p className="mt-5 max-w-sm font-body text-base sm:text-lg leading-relaxed text-bone/90">
             {organization.shortDescription}
           </p>
           <div className="mt-6">
@@ -33,11 +33,11 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-display text-sm font-bold uppercase tracking-widest text-bone">Quick Links</h4>
+          <h4 className="font-display text-base font-bold uppercase tracking-widest text-bone">Quick Links</h4>
           <ul className="mt-5 space-y-3">
             {QUICK_LINKS.map((l) => (
               <li key={l.to}>
-                <Link to={l.to} className="text-sm text-bone-muted transition-colors hover:text-bronze-light">
+                <Link to={l.to} className="font-body text-base sm:text-lg text-bone-muted transition-colors hover:text-bronze-light">
                   {l.label}
                 </Link>
               </li>
@@ -46,20 +46,20 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-display text-sm font-bold uppercase tracking-widest text-bone">Get In Touch</h4>
-          <ul className="mt-5 space-y-4 text-sm text-bone-muted">
+          <h4 className="font-display text-base font-bold uppercase tracking-widest text-bone">Get In Touch</h4>
+          <ul className="mt-5 space-y-4 font-body text-base sm:text-lg text-bone-muted">
             <li className="flex gap-3">
-              <MapPin size={18} className="mt-0.5 shrink-0 text-bronze" />
+              <MapPin size={18} className="mt-1 shrink-0 text-bronze" />
               <span>{organization.address.full}</span>
             </li>
             <li className="flex gap-3">
-              <Phone size={18} className="shrink-0 text-bronze" />
+              <Phone size={18} className="mt-1 shrink-0 text-bronze" />
               <a href={`tel:${organization.contact.phone}`} className="hover:text-bronze-light">
                 {organization.contact.phoneDisplay}
               </a>
             </li>
             <li className="flex gap-3">
-              <Mail size={18} className="shrink-0 text-bronze" />
+              <Mail size={18} className="mt-1 shrink-0 text-bronze" />
               <a href={`mailto:${organization.contact.email}`} className="hover:text-bronze-light break-all">
                 {organization.contact.email}
               </a>
@@ -68,7 +68,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-display text-sm font-bold uppercase tracking-widest text-bone">Find Us</h4>
+          <h4 className="font-display text-base font-bold uppercase tracking-widest text-bone">Find Us</h4>
           <div className="mt-5 overflow-hidden rounded-xl border border-surface-border">
             <iframe
               title="SS Interiors location map"
@@ -84,9 +84,8 @@ export default function Footer() {
       </div>
 
       <div className="relative border-t border-surface-border">
-        <div className="container-px mx-auto flex flex-col items-center justify-between gap-3 py-6 text-xs text-bone-faint md:flex-row">
-          <p>© {new Date().getFullYear()} {organization.name}. All rights reserved.</p>
-          <p className="font-mono">
+        <div className="container-px mx-auto flex flex-col items-center justify-between gap-3 py-6 font-body text-base sm:text-lg text-bone-faint md:flex-row">
+          <p>© {new Date().getFullYear()} {organization.name}.
             Designed &amp; developed by{' '}
             
             <a href="https://www.teamdeoskolkata.in/"

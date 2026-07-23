@@ -55,6 +55,7 @@ export default function Home() {
           <div>
             <SectionTitle
               eyebrow="About SS Interiors"
+              scriptAccent="Crafted with Passion"
               title="Interiors designed around how you actually live."
               description={organization.about.story}
             />
@@ -76,6 +77,7 @@ export default function Home() {
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionTitle
               eyebrow="Our Services"
+              scriptAccent="Tailored Elegance"
               title="Domestic and corporate interiors, done end to end."
               description="From modular kitchens to full office fit-outs — every service is designed, planned and executed by our in-house team."
             />
@@ -103,6 +105,7 @@ export default function Home() {
         <div className="container-px mx-auto">
           <SectionTitle
             eyebrow="How We Work"
+            scriptAccent="Our Seamless Flow"
             title="From concept to handover, in four clear stages."
             align="center"
           />
@@ -110,9 +113,9 @@ export default function Home() {
             <div className="pointer-events-none absolute left-0 right-0 top-6 hidden h-px bg-gradient-to-r from-transparent via-surface-border to-transparent md:block" />
             {organization.process.map((step, i) => (
               <Reveal key={step.step} delay={i * 0.1} className="relative flex flex-col items-center text-center md:items-start md:text-left">
-                <span className="font-mono text-sm text-bronze">{step.step}</span>
-                <h3 className="mt-4 font-display text-lg font-bold text-bone">{step.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-bone-muted">{step.description}</p>
+                <span className="font-mono text-base font-semibold text-bronze">{step.step}</span>
+                <h3 className="mt-4 font-display text-xl font-bold tracking-wide uppercase text-bone">{step.title}</h3>
+                <p className="mt-3 font-body text-base sm:text-lg md:text-xl leading-relaxed text-bone-muted">{step.description}</p>
               </Reveal>
             ))}
           </div>
@@ -125,6 +128,7 @@ export default function Home() {
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionTitle
               eyebrow="Our Work"
+              scriptAccent="Bespoke Portfolios"
               title="A glimpse into recently completed spaces."
             />
             <Reveal delay={0.1}>

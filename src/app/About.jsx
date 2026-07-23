@@ -73,7 +73,7 @@ export default function About() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.7 }}
-              className="mt-6 max-w-lg font-body text-base leading-relaxed text-bone-muted md:text-lg"
+              className="mt-6 max-w-xl font-body text-lg sm:text-xl md:text-2xl leading-relaxed text-bone/90"
             >
               {organization.about.story}
             </motion.p>
@@ -135,7 +135,7 @@ export default function About() {
               <Target className="text-bronze" size={26} />
             </motion.div>
             <h3 className="mt-5 font-display text-xl font-bold text-bone">Our Mission</h3>
-            <p className="mt-3 text-sm leading-relaxed text-bone-muted">{organization.about.mission}</p>
+            <p className="mt-3 text-base sm:text-lg leading-relaxed text-bone-muted">{organization.about.mission}</p>
           </Reveal>
           <Reveal delay={0.1} className="card-glass group p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-volt/50 hover:shadow-[0_20px_60px_-20px_rgba(76,111,255,0.3)]">
             <motion.div
@@ -146,7 +146,7 @@ export default function About() {
               <Eye className="text-volt-light" size={26} />
             </motion.div>
             <h3 className="mt-5 font-display text-xl font-bold text-bone">Our Vision</h3>
-            <p className="mt-3 text-sm leading-relaxed text-bone-muted">{organization.about.vision}</p>
+            <p className="mt-3 text-base sm:text-lg leading-relaxed text-bone-muted">{organization.about.vision}</p>
           </Reveal>
         </div>
       </section>
@@ -188,7 +188,7 @@ export default function About() {
                     <span className="font-mono text-xs text-bone-faint">0{i + 1}</span>
                   </div>
                   <h3 className="mt-4 font-display text-lg font-bold text-bone">{v.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-bone-muted">{v.description}</p>
+                  <p className="mt-2 text-base sm:text-lg leading-relaxed text-bone-muted">{v.description}</p>
                 </Reveal>
               )
             })}
@@ -204,9 +204,9 @@ export default function About() {
             <div className="pointer-events-none absolute left-0 right-0 top-6 hidden h-px bg-gradient-to-r from-transparent via-surface-border to-transparent md:block" />
             {organization.process.map((step, i) => (
               <Reveal key={step.step} delay={i * 0.1} className="relative flex flex-col items-center text-center md:items-start md:text-left">
-                <span className="font-mono text-sm text-bronze">{step.step}</span>
-                <h3 className="mt-4 font-display text-lg font-bold text-bone">{step.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-bone-muted">{step.description}</p>
+                <span className="font-mono text-base font-semibold text-bronze">{step.step}</span>
+                <h3 className="mt-4 font-display text-xl font-bold tracking-wide uppercase text-bone">{step.title}</h3>
+                <p className="mt-3 font-body text-base sm:text-lg md:text-xl leading-relaxed text-bone-muted">{step.description}</p>
               </Reveal>
             ))}
           </div>
@@ -230,7 +230,7 @@ export default function About() {
                 <div>
                   <h4 className="font-display text-base font-bold text-bone">{member.name}</h4>
                   <p className="font-mono text-xs uppercase tracking-widest text-bronze">{member.role}</p>
-                  <p className="mt-2 text-sm leading-relaxed text-bone-muted">{member.bio}</p>
+                  <p className="mt-2 text-base sm:text-lg leading-relaxed text-bone-muted">{member.bio}</p>
                 </div>
               </Reveal>
             ))}

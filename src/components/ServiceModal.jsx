@@ -39,7 +39,7 @@ export default function ServiceModal({ service, onClose }) {
 
             <div className="p-6 md:p-8">
               <h3 className="font-display text-2xl font-bold text-bone md:text-3xl">{service.title}</h3>
-              <p className="mt-3 font-body text-sm leading-relaxed text-bone-muted md:text-base">
+              <p className="mt-3 font-body text-lg sm:text-xl leading-relaxed text-bone/90">
                 {service.description}
               </p>
 
@@ -47,7 +47,7 @@ export default function ServiceModal({ service, onClose }) {
                 <p className="eyebrow mb-3">What's Included</p>
                 <ul className="space-y-2.5">
                   {service.highlights.map((h) => (
-                    <li key={h} className="flex items-start gap-3 text-sm text-bone/85">
+                    <li key={h} className="flex items-start gap-3 text-base sm:text-lg text-bone/90">
                       <Check size={16} className="mt-0.5 shrink-0 text-volt-light" />
                       {h}
                     </li>

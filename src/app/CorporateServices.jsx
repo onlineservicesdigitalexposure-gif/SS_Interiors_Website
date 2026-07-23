@@ -93,10 +93,14 @@ export default function CorporateServices() {
         </div>
       </section>
 
-      {/* Spaces we design */}
+      {/* Key spaces */}
       <section className="section">
         <div className="container-px mx-auto">
-          <SectionTitle eyebrow="Spaces We Design" title="Every part of your office, covered." align="center" />
+          <SectionTitle
+            eyebrow="Key Spaces We Fit Out"
+            title="Custom corporate spaces tailored for peak productivity."
+            align="center"
+          />
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {SPACES.map((space, i) => (
               <Reveal
@@ -112,7 +116,7 @@ export default function CorporateServices() {
                   <space.icon className="text-volt-light" size={20} />
                 </motion.div>
                 <h3 className="mt-4 font-display text-base font-bold text-bone">{space.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-bone-muted">{space.description}</p>
+                <p className="mt-2 text-base sm:text-lg leading-relaxed text-bone-muted">{space.description}</p>
               </Reveal>
             ))}
           </div>
@@ -127,7 +131,7 @@ export default function CorporateServices() {
             <Reveal delay={0.1}>
               <ul className="mt-6 space-y-3">
                 {service.highlights.map((h) => (
-                  <li key={h} className="flex items-start gap-3 text-sm text-bone/85 md:text-base">
+                  <li key={h} className="flex items-start gap-3 text-base sm:text-lg text-bone/90 md:text-xl">
                     <Check size={18} className="mt-0.5 shrink-0 text-volt-light" />
                     {h}
                   </li>
@@ -149,9 +153,9 @@ export default function CorporateServices() {
             <div className="pointer-events-none absolute left-0 right-0 top-6 hidden h-px bg-gradient-to-r from-transparent via-surface-border to-transparent md:block" />
             {organization.process.map((step, i) => (
               <Reveal key={step.step} delay={i * 0.1} className="relative flex flex-col items-center text-center md:items-start md:text-left">
-                <span className="font-mono text-sm text-bronze">{step.step}</span>
-                <h3 className="mt-4 font-display text-lg font-bold text-bone">{step.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-bone-muted">{step.description}</p>
+                <span className="font-mono text-base font-semibold text-bronze">{step.step}</span>
+                <h3 className="mt-4 font-display text-xl font-bold tracking-wide uppercase text-bone">{step.title}</h3>
+                <p className="mt-3 font-body text-base sm:text-lg md:text-xl leading-relaxed text-bone-muted">{step.description}</p>
               </Reveal>
             ))}
           </div>
@@ -167,7 +171,7 @@ export default function CorporateServices() {
               <h2 className="font-display text-2xl font-bold text-bone md:text-3xl">
                 Planning a new office or a workspace refresh?
               </h2>
-              <p className="mx-auto mt-3 max-w-md text-sm text-bone-muted">
+              <p className="mx-auto mt-3 max-w-lg text-base sm:text-lg text-bone-muted">
                 Book a free consultation and we'll walk you through layout options, timelines and costs.
               </p>
               <Link to="/contact" state={{ service: service.title }} className="btn-primary mt-7 inline-flex">

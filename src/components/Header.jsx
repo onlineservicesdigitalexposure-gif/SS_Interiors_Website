@@ -47,7 +47,7 @@ export default function Header() {
   const isServicesActive = location.pathname.startsWith('/services')
 
  const linkClass = ({ isActive }) =>
-    `relative font-body text-lg md:text-xl font-medium tracking-wide transition-colors duration-200 after:absolute after:-bottom-1.5 after:left-0 after:h-px after:bg-bronze after:transition-all after:duration-300 ${
+    `relative font-sans text-base md:text-lg font-medium tracking-wide transition-colors duration-200 after:absolute after:-bottom-1.5 after:left-0 after:h-px after:bg-bronze after:transition-all after:duration-300 ${
       isActive
         ? 'text-bone after:w-full'
         : 'text-bone/70 after:w-0 hover:text-bone hover:after:w-full'

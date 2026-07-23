@@ -17,7 +17,7 @@ export default function DomesticServices() {
             <h1 className="mt-5 font-display text-4xl font-extrabold leading-tight text-bone sm:text-5xl">
               Every room, <span className="text-gradient-bronze">designed on purpose.</span>
             </h1>
-            <p className="mt-6 font-body text-base leading-relaxed text-bone-muted md:text-lg">
+            <p className="mt-6 font-body text-lg sm:text-xl md:text-2xl leading-relaxed text-bone/90">
               Tap any space below for a closer look — layouts, materials and everything included.
             </p>
           </Reveal>
@@ -51,7 +51,7 @@ export default function DomesticServices() {
                 <div className="flex items-start justify-between gap-4 p-6">
                   <div>
                     <h3 className="font-display text-xl font-bold text-bone">{service.title}</h3>
-                    <p className="mt-2 font-body text-sm leading-relaxed text-bone-muted">{service.summary}</p>
+                    <p className="mt-2 font-body text-base sm:text-lg leading-relaxed text-bone-muted">{service.summary}</p>
                   </div>
                   <span className="mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full border border-surface-border text-bone-muted transition-all duration-300 group-hover:border-bronze group-hover:bg-bronze/10 group-hover:text-bronze-light">
                     <ArrowUpRight size={16} />
