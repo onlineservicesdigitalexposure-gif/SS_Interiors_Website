@@ -5,15 +5,15 @@ export default {
     extend: {
       colors: {
         ink: {
-          DEFAULT: '#08090C',
+          DEFAULT: '#0D111A',
           50: '#F4F4F5',
-          900: '#0A0C10',
-          950: '#050608',
+          900: '#111622',
+          950: '#090C13',
         },
         surface: {
-          DEFAULT: '#12151B',
-          light: '#181C24',
-          border: '#242933',
+          DEFAULT: '#161C28',
+          light: '#1E2536',
+          border: '#2A3245',
         },
         bronze: {
           DEFAULT: '#C08A4E',
@@ -26,9 +26,9 @@ export default {
           dark: '#2F49CC',
         },
         bone: {
-          DEFAULT: '#E9E6E0',
-          muted: '#9B9791',
-          faint: '#59564F',
+          DEFAULT: '#F4F0E8',
+          muted: '#A8A49C',
+          faint: '#6E6B63',
         },
       },
       fontFamily: {
@@ -41,9 +41,9 @@ export default {
       },
       backgroundImage: {
         'grid-lines':
-          'linear-gradient(to right, rgba(233,230,224,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(233,230,224,0.05) 1px, transparent 1px)',
+          'linear-gradient(to right, rgba(244,240,232,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(244,240,232,0.04) 1px, transparent 1px)',
         'radial-glow':
-          'radial-gradient(circle at 50% 0%, rgba(76,111,255,0.15), transparent 60%)',
+          'radial-gradient(circle at 50% 0%, rgba(192,138,78,0.18), rgba(76,111,255,0.08) 50%, transparent 80%)',
       },
       backgroundSize: {
         grid: '48px 48px',
